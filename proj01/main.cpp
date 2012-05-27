@@ -1,13 +1,13 @@
+#include <QtGui>
 #include <QApplication>
-#include <QTextEdit>
+#include <QPushButton>
 
 int main(int argv, char **args) {
 	QApplication app(argv, args);
 
-	QTextEdit textEdit;
-	textEdit.show();
+	QPushButton hello("Hello World!");
+	hello.resize(100,30);
 
+	hello.show();
 	return app.exec();
 }
-
-/* vim: set noet sw=4 ts=4 ai: */
